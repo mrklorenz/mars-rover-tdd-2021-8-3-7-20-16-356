@@ -23,6 +23,7 @@ public class MarsRover {
         if(direction.equals("N")) newLocationY = locationY + 1;
         if(direction.equals("S")) newLocationY = locationY - 1;
         if(direction.equals("E")) newLocationX = locationX + 1;
+        if(direction.equals("W")) newLocationX = locationX - 1;
 
         this.roverStatus = new RoverStatus(newLocationX, newLocationY, direction);
     }
