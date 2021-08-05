@@ -1,5 +1,7 @@
 package com.afs.tdd;
 
+import java.util.Arrays;
+
 public class MarsRover {
     private RoverStatus roverStatus;
 
@@ -7,11 +9,8 @@ public class MarsRover {
         this.roverStatus = roverStatus;
     }
 
-    public void executeCommands(String command) {
-        String [] batchCommand = command.split("");
-        for(String step : batchCommand){
-            executeCommand(step);
-        }
+    public void executeCommands(String commands) {
+        Arrays.stream(commands.split("")).forEach(this::executeCommand);
     }
 
     public void executeCommand(String command) {
@@ -27,10 +26,10 @@ public class MarsRover {
         int newLocationX = locationX;
         int newLocationY = locationY;
 
-        if(direction.equals("N")) newLocationY += 1;
-        if(direction.equals("S")) newLocationY -= 1;
-        if(direction.equals("E")) newLocationX += 1;
-        if(direction.equals("W")) newLocationX -= 1;
+        if (direction.equals("N")) newLocationY += 1;
+        if (direction.equals("S")) newLocationY -= 1;
+        if (direction.equals("E")) newLocationX += 1;
+        if (direction.equals("W")) newLocationX -= 1;
 
         this.roverStatus = new RoverStatus(newLocationX, newLocationY, direction);
     }
