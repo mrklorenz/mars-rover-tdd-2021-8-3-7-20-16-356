@@ -16,9 +16,7 @@ class MarsRoverTest {
         marsRover.executeCommand("M");
 
         //then
-        assertThat(expectedStatus.getLocationX()).isEqualTo(marsRover.getRoverStatus().getLocationX());
-        assertThat(expectedStatus.getLocationY()).isEqualTo(marsRover.getRoverStatus().getLocationY());
-        assertThat(expectedStatus.getDirection()).isEqualTo(marsRover.getRoverStatus().getDirection());
+        assertThat(expectedStatus).isEqualTo(marsRover.getRoverStatus());
     }
 
     @Test
@@ -31,9 +29,7 @@ class MarsRoverTest {
         marsRover.executeCommand("L");
 
         //then
-        assertThat(expectedStatus.getLocationX()).isEqualTo(marsRover.getRoverStatus().getLocationX());
-        assertThat(expectedStatus.getLocationY()).isEqualTo(marsRover.getRoverStatus().getLocationY());
-        assertThat(expectedStatus.getDirection()).isEqualTo(marsRover.getRoverStatus().getDirection());
+        assertThat(expectedStatus).isEqualTo(marsRover.getRoverStatus());
     }
 
     @Test
@@ -46,9 +42,7 @@ class MarsRoverTest {
         marsRover.executeCommand("R");
 
         //then
-        assertThat(expectedStatus.getLocationX()).isEqualTo(marsRover.getRoverStatus().getLocationX());
-        assertThat(expectedStatus.getLocationY()).isEqualTo(marsRover.getRoverStatus().getLocationY());
-        assertThat(expectedStatus.getDirection()).isEqualTo(marsRover.getRoverStatus().getDirection());
+        assertThat(expectedStatus).isEqualTo(marsRover.getRoverStatus());
     }
 
     @Test
@@ -61,9 +55,7 @@ class MarsRoverTest {
         marsRover.executeCommand("M");
 
         //then
-        assertThat(expectedStatus.getLocationX()).isEqualTo(marsRover.getRoverStatus().getLocationX());
-        assertThat(expectedStatus.getLocationY()).isEqualTo(marsRover.getRoverStatus().getLocationY());
-        assertThat(expectedStatus.getDirection()).isEqualTo(marsRover.getRoverStatus().getDirection());
+        assertThat(expectedStatus).isEqualTo(marsRover.getRoverStatus());
     }
 
     @Test
@@ -76,9 +68,7 @@ class MarsRoverTest {
         marsRover.executeCommand("L");
 
         //then
-        assertThat(expectedStatus.getLocationX()).isEqualTo(marsRover.getRoverStatus().getLocationX());
-        assertThat(expectedStatus.getLocationY()).isEqualTo(marsRover.getRoverStatus().getLocationY());
-        assertThat(expectedStatus.getDirection()).isEqualTo(marsRover.getRoverStatus().getDirection());
+        assertThat(expectedStatus).isEqualTo(marsRover.getRoverStatus());
     }
 
     @Test
@@ -91,9 +81,7 @@ class MarsRoverTest {
         marsRover.executeCommand("R");
 
         //then
-        assertThat(expectedStatus.getLocationX()).isEqualTo(marsRover.getRoverStatus().getLocationX());
-        assertThat(expectedStatus.getLocationY()).isEqualTo(marsRover.getRoverStatus().getLocationY());
-        assertThat(expectedStatus.getDirection()).isEqualTo(marsRover.getRoverStatus().getDirection());
+        assertThat(expectedStatus).isEqualTo(marsRover.getRoverStatus());
     }
 
     @Test
@@ -106,9 +94,7 @@ class MarsRoverTest {
         marsRover.executeCommand("M");
 
         //then
-        assertThat(expectedStatus.getLocationX()).isEqualTo(marsRover.getRoverStatus().getLocationX());
-        assertThat(expectedStatus.getLocationY()).isEqualTo(marsRover.getRoverStatus().getLocationY());
-        assertThat(expectedStatus.getDirection()).isEqualTo(marsRover.getRoverStatus().getDirection());
+        assertThat(expectedStatus).isEqualTo(marsRover.getRoverStatus());
     }
 
     @Test
@@ -121,9 +107,7 @@ class MarsRoverTest {
         marsRover.executeCommand("L");
 
         //then
-        assertThat(expectedStatus.getLocationX()).isEqualTo(marsRover.getRoverStatus().getLocationX());
-        assertThat(expectedStatus.getLocationY()).isEqualTo(marsRover.getRoverStatus().getLocationY());
-        assertThat(expectedStatus.getDirection()).isEqualTo(marsRover.getRoverStatus().getDirection());
+        assertThat(expectedStatus).isEqualTo(marsRover.getRoverStatus());
     }
 
     @Test
@@ -136,9 +120,7 @@ class MarsRoverTest {
         marsRover.executeCommand("R");
 
         //then
-        assertThat(expectedStatus.getLocationX()).isEqualTo(marsRover.getRoverStatus().getLocationX());
-        assertThat(expectedStatus.getLocationY()).isEqualTo(marsRover.getRoverStatus().getLocationY());
-        assertThat(expectedStatus.getDirection()).isEqualTo(marsRover.getRoverStatus().getDirection());
+        assertThat(expectedStatus).isEqualTo(marsRover.getRoverStatus());
     }
 
     @Test
@@ -151,9 +133,7 @@ class MarsRoverTest {
         marsRover.executeCommand("M");
 
         //then
-        assertThat(expectedStatus.getLocationX()).isEqualTo(marsRover.getRoverStatus().getLocationX());
-        assertThat(expectedStatus.getLocationY()).isEqualTo(marsRover.getRoverStatus().getLocationY());
-        assertThat(expectedStatus.getDirection()).isEqualTo(marsRover.getRoverStatus().getDirection());
+        assertThat(expectedStatus).isEqualTo(marsRover.getRoverStatus());
     }
 
     @Test
@@ -166,9 +146,7 @@ class MarsRoverTest {
         marsRover.executeCommand("L");
 
         //then
-        assertThat(expectedStatus.getLocationX()).isEqualTo(marsRover.getRoverStatus().getLocationX());
-        assertThat(expectedStatus.getLocationY()).isEqualTo(marsRover.getRoverStatus().getLocationY());
-        assertThat(expectedStatus.getDirection()).isEqualTo(marsRover.getRoverStatus().getDirection());
+        assertThat(expectedStatus).isEqualTo(marsRover.getRoverStatus());
     }
 
     @Test
@@ -181,9 +159,7 @@ class MarsRoverTest {
         marsRover.executeCommand("R");
 
         //then
-        assertThat(expectedStatus.getLocationX()).isEqualTo(marsRover.getRoverStatus().getLocationX());
-        assertThat(expectedStatus.getLocationY()).isEqualTo(marsRover.getRoverStatus().getLocationY());
-        assertThat(expectedStatus.getDirection()).isEqualTo(marsRover.getRoverStatus().getDirection());
+        assertThat(expectedStatus).isEqualTo(marsRover.getRoverStatus());
     }
 
     @Test
@@ -196,9 +172,7 @@ class MarsRoverTest {
         marsRover.executeCommands("MLMRMM");
 
         //then
-        assertThat(expectedStatus.getLocationX()).isEqualTo(marsRover.getRoverStatus().getLocationX());
-        assertThat(expectedStatus.getLocationY()).isEqualTo(marsRover.getRoverStatus().getLocationY());
-        assertThat(expectedStatus.getDirection()).isEqualTo(marsRover.getRoverStatus().getDirection());
+        assertThat(expectedStatus).isEqualTo(marsRover.getRoverStatus());
     }
 
 
