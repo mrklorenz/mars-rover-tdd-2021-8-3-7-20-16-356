@@ -31,7 +31,7 @@ public class MarsRover {
         final int locationX = roverStatus.getLocationX();
         final int locationY = roverStatus.getLocationY();
         final String direction = roverStatus.getDirection();
-        String newDirection = "N";
+        String newDirection = "";
 
         if (direction.equals("N")) newDirection = "E";
         if (direction.equals("S")) newDirection = "W";
@@ -44,10 +44,11 @@ public class MarsRover {
         final int locationX = roverStatus.getLocationX();
         final int locationY = roverStatus.getLocationY();
         final String direction = roverStatus.getDirection();
-        String newDirection = "N";
+        String newDirection = "";
 
         if (direction.equals("N")) newDirection = "W";
         if (direction.equals("S")) newDirection = "E";
+        if (direction.equals("E")) newDirection = "N";
 
 
         this.roverStatus = new RoverStatus(locationX, locationY, newDirection);
