@@ -19,7 +19,7 @@ public class MarsRover {
         if (command.equals("R")) turnRight();
     }
 
-    public void move() {
+    private void move() {
         int newLocationX = roverStatus.getLocationX();
         int newLocationY = roverStatus.getLocationY();
 
