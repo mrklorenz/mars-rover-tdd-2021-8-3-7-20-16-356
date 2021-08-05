@@ -186,6 +186,22 @@ class MarsRoverTest {
         assertThat(expectedStatus.getDirection()).isEqualTo(marsRover.getRoverStatus().getDirection());
     }
 
+    @Test
+    void should_return_new_Location_when_execute_commands_given_batch_commands(){
+        //given
+        MarsRover marsRover = new MarsRover(new RoverStatus(0, 0, "N"));
+        RoverStatus expectedStatus = new RoverStatus(-1, 3, "N");
+
+        //when
+        marsRover.executeCommands("MLMRMM");
+
+        //then
+        assertThat(expectedStatus.getLocationX()).isEqualTo(marsRover.getRoverStatus().getLocationX());
+        assertThat(expectedStatus.getLocationY()).isEqualTo(marsRover.getRoverStatus().getLocationY());
+        assertThat(expectedStatus.getDirection()).isEqualTo(marsRover.getRoverStatus().getDirection());
+    }
+
+
 
 
 
