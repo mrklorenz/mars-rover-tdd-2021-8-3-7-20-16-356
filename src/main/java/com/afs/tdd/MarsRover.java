@@ -8,9 +8,7 @@ public class MarsRover {
     }
 
     public void executeCommand(String command) {
-        if (command.equals("M")) {
-            move();
-        }
+        if (command.equals("M")) move();
     }
 
     public void move() {
