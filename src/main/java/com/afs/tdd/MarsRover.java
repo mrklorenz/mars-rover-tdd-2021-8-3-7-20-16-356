@@ -7,6 +7,13 @@ public class MarsRover {
         this.roverStatus = roverStatus;
     }
 
+    public void executeCommands(String command) {
+        String [] batchCommand = command.split("");
+        for(String step : batchCommand){
+            executeCommand(step);
+        }
+    }
+
     public void executeCommand(String command) {
         if (command.equals("M")) move();
         if (command.equals("L")) turnLeft();
@@ -17,13 +24,13 @@ public class MarsRover {
         final int locationX = roverStatus.getLocationX();
         final int locationY = roverStatus.getLocationY();
         final String direction = roverStatus.getDirection();
-        int newLocationX = 0;
-        int newLocationY = 0;
+        int newLocationX = locationX;
+        int newLocationY = locationY;
 
-        if(direction.equals("N")) newLocationY = locationY + 1;
-        if(direction.equals("S")) newLocationY = locationY - 1;
-        if(direction.equals("E")) newLocationX = locationX + 1;
-        if(direction.equals("W")) newLocationX = locationX - 1;
+        if(direction.equals("N")) newLocationY += 1;
+        if(direction.equals("S")) newLocationY -= 1;
+        if(direction.equals("E")) newLocationX += 1;
+        if(direction.equals("W")) newLocationX -= 1;
 
         this.roverStatus = new RoverStatus(newLocationX, newLocationY, direction);
     }
@@ -61,5 +68,6 @@ public class MarsRover {
     public RoverStatus getRoverStatus() {
         return roverStatus;
     }
+
 
 }
