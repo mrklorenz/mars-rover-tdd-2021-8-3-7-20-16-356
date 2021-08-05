@@ -25,7 +25,7 @@ class MarsRoverTest {
     void should_return_x0_y0_directionW_when_execute_command_given_x0_y0_directionN_commandL() {
         //given
         MarsRover marsRover = new MarsRover(new RoverStatus(0, 0, "N"));
-        RoverStatus expectedStatus = new RoverStatus(0, 1, "N");
+        RoverStatus expectedStatus = new RoverStatus(0, 0, "W");
 
         //when
         marsRover.executeCommand("L");
@@ -35,6 +35,8 @@ class MarsRoverTest {
         assertThat(expectedStatus.getLocationY()).isEqualTo(marsRover.getRoverStatus().getLocationY());
         assertThat(expectedStatus.getDirection()).isEqualTo(marsRover.getRoverStatus().getDirection());
     }
+
+    
 
 
 
